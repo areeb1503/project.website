@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zomato</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Bree+Serif&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="logo.png" alt="mylogo">
+        </div>
+        <ul>
+            <li class="items"><a href="#home">Home</a></li>
+            <li class="items"><a href="#services">Services</a></li>
+            <li class="items"><a href="#company">Brands</a></li>
+            <li class="items"><a href="#sign">  Sign-In</a></li>
+
+        </ul>
+    </nav>
+    <section id="home">
+        <h1 class="h-primary">Welcome To Zomato</h1>
+        <p id="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, ullam! Lorem ipsum dolor sit
+            amet, consectetur adipisicing elit. Asperiores, totam.</p>
+        <p id="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, ullam! Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Dolorem, nobis.</p>
+        <button class="btn"><a href="http://www.zomato.com" target="_blank">Order Now</a></button>
+    </section>
+    <h1 class="h-primary">Inspiration For Your First Order</h1>
+    <section id="services">
+
+
+        <div class="box">
+            <img src="1.jpg" alt="">
+            <h2 class="secondary">Burger</h2>
+
+        </div>
+        <div class="box">
+            <img src="2.jpg" alt="">
+            <h2 class="secondary">Pizza</h2>
+        </div>
+
+        <div class="box">
+            <img src="4.jpg" alt="">
+            <h2 class="secondary">Taco </h2>
+        </div>
+
+        <div class="box">
+            <img src="5.jpg" alt="">
+            <h2 class="secondary">Cake </h2>
+        </div>
+
+
+    </section>
+    <h1 class="h-primary">Top brands for you</h1>
+    
+
+<section id="company">
+        <div class="trade">
+            <img src="logo1.png" alt="">
+            <h2 class="secondary">McDonald's</h2>
+            </div>
+        <div class="trade">
+            <img src="logo2.png" alt="">
+            <h2 class="secondary">Starbucks</h2>
+            </div>
+        <div class="trade">
+            <img src="logo3.png" alt="">
+            <h2 class="secondary">Taco Bell</h2>
+            </div>
+        <div class="trade">
+            <img src="logo4.png" alt="">
+            <h2 class="secondary">Burger king</h2>
+            </div>
+        
+        <div class="trade">
+            <img src="logo7.png" alt="">
+            <h2 class="secondary">Subway</h2>
+            </div>
+            <div class="trade">
+            <img src="logo5.png" alt="">
+            <h2 class="secondary">KFC</h2>
+            </div>
+</section>
+<section id ="sign">
+    <h1 class="h-primary">Sign- In</h1>
+    <div id="contact">
+
+    <form action="noaction.php">
+       <div class="form1">
+        <label for="name">  Name:</label>
+        <input type="text"  name="name"id="name" placeholder="Enter Your Name">
+       </div>
+       <div class="form1">
+        <label for="phone">Phone No:</label>
+        <input type="phone"  name="phone"id="phone" placeholder="Enter Your Phone No.">
+       </div>
+       <div class="form1">
+       <div class="form1">
+        <label for="email">Email:</label>
+        <input type="email"  name="email"id="email" placeholder="Enter Your Email">
+       </div>
+       <div class="form1">
+        <label for="message">Message:</label>
+        <textarea name="message" id="message" cols="30" rows="10" placeholder="Write Here:"></textarea>
+       </div>
+       <button id="value">Submit Now</button>
+     
+    </form>
+</div>
+</section>
+<footer>
+    <div class="center">
+        Copyright &copy; www.Zomato.com. All rights reserved!
+    </div>
+</footer>
+    
+</body>
+
+</html>
+
+
+
+
+
+
+
+CSS Styling:
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* Top page */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+    flex-direction: row;
+    height: 57px;
+
+
+}
+
+#navbar ul {
+    display: flex;
+
+
+
+
+
+}
+
+#logo {
+    margin: 10px 34px;
+}
+
+#logo img {
+    height: 59px;
+    margin: 5px 10px;
+    display: flex;
+    width: 90px;
+
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+
+
+}
+
+#navbar ul li {
+
+    list-style: none;
+    font-size: 1.4rem;
+}
+
+#navbar ul li a {
+    display: block;
+    padding: 2px 23px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Baloo Bhaina 2', cursive
+}
+
+#navbar ul li a:hover {
+
+    color: black;
+    background-color: white;
+    border-radius: 20px;
+
+
+}
+
+/* home page */
+#home {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding: 3px 22px;
+    align-items: center;
+    height: 490px;
+}
+
+#home::before {
+    background: url('../bg.jpg') no-repeat center center/cover;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 78%;
+    width: 100%;
+    z-index: -1;
+    opacity: .89;
+}
+
+#home p {
+    color: white;
+    font-size: 1rem;
+
+}
+
+
+/* Services Section */
+#services {
+    display: flex;
+}
+
+#services .box {
+    /* border: 3px solid brown; */
+    text-align: center;
+    padding: 34px;
+    margin: 2px 2px;
+    border-radius: 23px;
+}
+
+#services .box img {
+     height: 160px;
+    margin: auto;
+    display: block;
+}
+/* Brands */
+#company {
+    display: flex;
+    
+
+
+}
+
+#company .trade {
+    /* border: 3px solid brown; */
+    text-align: center;
+    padding: 34px;
+    margin: 1px 1px;
+    border-radius: 23px;
+}
+
+#company .trade img {
+     height: 160px;
+    margin: auto;
+    display: block;
+}
+
+/* Sign-In */
+#sign{
+    position: relative;
+}
+#sign::before {
+    background: url('../bg_1.jpg') no-repeat center center/cover;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .4;
+}
+#contact {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 34px
+}
+#contact input, 
+#contact textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+} 
+
+#contact form{
+    width: 40%;
+}
+
+#contact label{
+   font-size: 1.5rem;
+   font-family: 'Bree Serif', serif;
+
+
+}
+#contact button{
+background-color: black;
+color: white;
+border: 2px solid white;
+padding: 8px 20px;
+    font-size: 1.2rem;
+    margin: 20px;
+    cursor: pointer;
+    font-family: 'Bree Serif', serif;
+    border-radius: 15px;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+/* utility classes */
+.h-primary {
+    font-size: 2.5rem;
+    padding: 12px;
+    ;
+    font-family: 'Bree Serif', serif;
+
+}
+
+
+
+#home h1 {
+    color: white;
+    text-align: center;
+}
+.secondary{
+    font-family: 'Bree Serif', serif;
+    font-size: 1.8rem;
+
+}
+
+.btn {
+    background-color: rgb(109, 20, 20);
+    color: white;
+    border-radius: 15px;
+    border: 2px solid white;
+    padding: 8px 20px;
+    font-size: 1.2rem;
+    margin: 20px;
+    cursor: pointer;
+    font-family: 'Bree Serif', serif;
+}
+.center{
+    text-align: center;
+}
+.btn a{
+    text-decoration: none;
+    color: white;
+}
